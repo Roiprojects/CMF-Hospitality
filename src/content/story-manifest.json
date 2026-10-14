@@ -1,0 +1,57 @@
+{
+  "pour": {
+    "folder": "pour",
+    "urlPrefix": "/frames/pour/",
+    "frameCount": 240,
+    "firstFrame": "0000.webp",
+    "lastFrame": "0239.webp",
+    "width": 3840,
+    "height": 2160,
+    "missingFrames": [],
+    "totalBytes": 380017296
+  },
+  "assembly": {
+    "folder": "assembly",
+    "urlPrefix": "/frames/assembly/",
+    "frameCount": 240,
+    "firstFrame": "0000.webp",
+    "lastFrame": "0239.webp",
+    "width": 3840,
+    "height": 2160,
+    "missingFrames": [],
+    "totalBytes": 476624904
+  },
+  "inside": {
+    "folder": "inside",
+    "urlPrefix": "/frames/inside/",
+    "frameCount": 240,
+    "firstFrame": "0000.webp",
+    "lastFrame": "0239.webp",
+    "width": 3840,
+    "height": 2160,
+    "missingFrames": [],
+    "totalBytes": 410787660
+  },
+  "inside-alternate": {
+    "folder": "inside-alternate",
+    "urlPrefix": "/frames/inside-alternate/",
+    "frameCount": 240,
+    "firstFrame": "0000.webp",
+    "lastFrame": "0239.webp",
+    "width": 3840,
+    "height": 2160,
+    "missingFrames": [],
+    "totalBytes": 469587986
+  },
+  "occasions": {
+    "folder": "occasions",
+    "urlPrefix": "/frames/occasions/",
+    "frameCount": 240,
+    "firstFrame": "0000.webp",
+    "lastFrame": "0239.webp",
+    "width": 3840,
+    "height": 2160,
+    "missingFrames": [],
+    "totalBytes": 548469210
+  }
+}

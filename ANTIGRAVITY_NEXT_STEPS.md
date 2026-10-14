@@ -1,0 +1,7 @@
+Continue this existing Next.js project without changing framework or recreating the design. Read README.md, VALIDATION.md and src/content/video-manifest.json. Extract all provided frame archives into the project before running.
+
+Preserve the exact 3840×2160 lossless WebP sequences and original 24 fps source frames. Do not downscale, recompress lossily, reduce frame count or substitute lower-resolution mobile assets without the owner's explicit approval. Keep original MP4s untouched. Use full-composition contain fitting; don't crop mobile video by default.
+
+Run npm ci, npm run dev, then inspect desktop and 390px mobile. Test story forward/backward scrubbing, chapter jumps, rapid scrolling, delayed frame responses, failures, reduced motion, motion toggle and navigation away/back. Inspect actual GPU/decoded memory and network use. FrameSequence retains four bitmaps and two requests; keep memory bounded. Browser-visible loading delays are preferable to falsely claiming that a frame has loaded.
+
+The scene uses the four story films in order: pour, assembly, inside, occasions. The two missing uploads have now been received and sampled. The alternate smoky inside clip is selectable through story-sequence.json. Refine story text placement so it does not obscure the cocktail. The other pages and source About content must remain intact. Keep noindex and honest testimonial/gallery placeholders until approved content arrives.

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "pour",
+    "original": "Pouring_cocktail_into_glass_4K_20261012095127.mp4",
+    "sha256": "95cc0289aad8d221f6950e310238e78578f41acabae74488981c5ccdcdf4f055",
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 240,
+    "bytes": 380017296,
+    "encoding": "Lossless WebP; no resizing, cropping or frame decimation"
+  },
+  {
+    "id": "inside",
+    "original": "Filming_luxury_cocktail_commerci\u2026_4K_20261012095442.mp4",
+    "sha256": "2e43eca83b203f5122b6f2204c3aa1303913c4814b66800cb19ef1cc05c44c71",
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 240,
+    "bytes": 410787660,
+    "encoding": "Lossless WebP; no resizing, cropping or frame decimation"
+  },
+  {
+    "id": "occasions",
+    "original": "Cocktail_across_three_celebrations_4K_20261012102157.mp4",
+    "sha256": "66ebe11e930e991f7b1ace184597a563621ddf725e464741f0f52be329ae17e7",
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 240,
+    "bytes": 548469210,
+    "encoding": "Lossless WebP; no resizing, cropping or frame decimation"
+  },
+  {
+    "id": "assembly",
+    "original": "Assembling_luxury_cocktail_in_st\u2026_20261012101933(1).mp4",
+    "sha256": "e5d94301f2d86ee2091cdb4475d6b96c799154a9a5b3da390517b61bd9ea1e35",
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 240,
+    "bytes": 476624904,
+    "encoding": "Lossless WebP, native dimensions, all source frames"
+  },
+  {
+    "id": "inside-alternate",
+    "original": "Filming_luxury_cocktail_commerci\u2026_4K_20261012095808(1).mp4",
+    "sha256": "3587555ac3955556e765ea1f2c381ed81d4666867e17dce025da42dab3277b01",
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 240,
+    "bytes": 469587986,
+    "encoding": "Lossless WebP, native dimensions, all source frames"
+  }
+]

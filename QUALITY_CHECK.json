@@ -1,0 +1,47 @@
+[
+  {
+    "clip": "pour",
+    "source_copy_sha256_equal": true,
+    "pixel_equal_frames": [
+      0,
+      120,
+      239
+    ]
+  },
+  {
+    "clip": "inside",
+    "source_copy_sha256_equal": true,
+    "pixel_equal_frames": [
+      0,
+      120,
+      239
+    ]
+  },
+  {
+    "clip": "occasions",
+    "source_copy_sha256_equal": true,
+    "pixel_equal_frames": [
+      0,
+      120,
+      239
+    ]
+  },
+  {
+    "clip": "assembly",
+    "source_copy_sha256_equal": true,
+    "pixel_equal_frames": [
+      0,
+      120,
+      239
+    ]
+  },
+  {
+    "clip": "inside-alternate",
+    "source_copy_sha256_equal": true,
+    "pixel_equal_frames": [
+      0,
+      120,
+      239
+    ]
+  }
+]
