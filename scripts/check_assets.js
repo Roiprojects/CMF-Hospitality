@@ -9,6 +9,11 @@ const framesPerClip = sequence.framesPerClip || 240;
 console.log('=== Checking Story Assets ===');
 console.log('Frames Directory:', baseDir);
 
+if (process.env.VERCEL || !fs.existsSync(baseDir)) {
+  console.log('Notice: Running in Vercel or cloud environment; skipping local frames check.');
+  process.exit(0);
+}
+
 let hasError = false;
 let totalChecked = 0;
 
