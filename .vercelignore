@@ -1,7 +1,6 @@
-.git
-.next
-out
-node_modules
 inputs_and_frames
 source-videos
-frames_storage
+.git
+out
+.next
+node_modules
