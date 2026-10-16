@@ -235,34 +235,28 @@ export default function StoryExperience() {
         {/* Subtle protective vignette */}
         <div className="story-vignette" aria-hidden="true" />
 
-        {/* Clean, Minimalist Story Header */}
-        <header className="story-tools" aria-label="Story controls">
-          <span className="story-brand">
-            BAR CHEF / 4K CINEMATIC STORY
-          </span>
+        {/* Mobile Story Segments (App-style top progress indicators for 5 chapters) */}
+        <div className="story-mobile-segments" aria-label="Story progress">
+          {chapters.map((chap, idx) => (
+            <div
+              key={chap.num}
+              className={`story-segment-bar ${
+                activeChapter === idx
+                  ? 'is-current'
+                  : activeChapter > idx
+                  ? 'is-completed'
+                  : ''
+              }`}
+            >
+              <div className="story-segment-fill" />
+            </div>
+          ))}
+        </div>
 
-          <a
-            href="#story"
-            onClick={handleSkipStory}
-            className="story-skip-link"
-            aria-label="Skip cinematic story to overview"
-          >
-            Skip story ↓
-          </a>
-
-          <button
-            type="button"
-            className="story-motion-btn"
-            onClick={() => {
-              setMotionEnabled(!motionEnabled);
-              setFramesReady(false);
-            }}
-            aria-pressed={motionEnabled}
-            aria-label={motionEnabled ? 'Disable motion and view stills' : 'Enable scroll-driven motion'}
-          >
-            {motionEnabled ? 'View without motion' : 'Enter story mode'}
-          </button>
-        </header>
+        {/* Discrete Cinematic Watermark */}
+        <div className="story-watermark" aria-hidden="true">
+          <span className="story-brand-badge">BAR CHEF · CINEMATIC STORY</span>
+        </div>
 
         {/* Story Chapter Content Panels */}
         <div className="story-panels">
