@@ -8,6 +8,7 @@ const destBase = path.resolve('public/frames');
 const clipsConfig = [
   { clip: 'pour', sources: [{ dir: 'pour', offset: 0 }] },
   { clip: 'assembly', sources: [{ dir: 'assembly', offset: 0 }] },
+  { clip: 'inside', sources: [{ dir: 'inside', offset: 0 }] },
   { clip: 'inside-alternate', sources: [{ dir: 'inside-alternate', offset: 0 }] },
   {
     clip: 'occasions',
@@ -19,7 +20,7 @@ const clipsConfig = [
 ];
 
 async function run() {
-  console.log('=== Optimizing Frames for High-Performance Web & Vercel ===');
+  console.log('=== Optimizing All 1200 Frames for High-Performance Web & Vercel ===');
   console.log('Source:', srcBase);
   console.log('Destination:', destBase);
 
@@ -40,8 +41,7 @@ async function run() {
       const sourceDir = path.join(srcBase, src.dir);
       const files = fs.readdirSync(sourceDir).filter(f => f.endsWith('.webp')).sort();
 
-      // Process in batches of 12 for speed
-      const batchSize = 12;
+      const batchSize = 16;
       for (let i = 0; i < files.length; i += batchSize) {
         const batch = files.slice(i, i + batchSize);
         await Promise.all(
@@ -54,6 +54,14 @@ async function run() {
 
             const origStat = fs.statSync(srcPath);
             totalOriginalBytes += origStat.size;
+
+            // If already optimized and size is under 150KB, reuse
+            if (fs.existsSync(destPath) && fs.statSync(destPath).size < 150000 && fs.statSync(destPath).size > 1000) {
+              const existingStat = fs.statSync(destPath);
+              totalOptimizedBytes += existingStat.size;
+              totalOptimized++;
+              return;
+            }
 
             await sharp(srcPath)
               .resize(1600, 900, { fit: 'cover' })

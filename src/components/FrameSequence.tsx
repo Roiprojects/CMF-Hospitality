@@ -8,10 +8,10 @@ interface FrameSequenceProps {
   onReady: (ready: boolean) => void;
 }
 
-const CLIPS: string[] = sequence.clips || ['pour', 'assembly', 'inside-alternate', 'occasions'];
+const CLIPS: string[] = sequence.clips || ['pour', 'assembly', 'inside', 'inside-alternate', 'occasions'];
 const FRAMES_PER_CLIP = sequence.framesPerClip || 240;
-const TOTAL_FRAMES = CLIPS.length * FRAMES_PER_CLIP; // 960 frames across the 4 cinematic scenes
-const LAST_FRAME = TOTAL_FRAMES - 1; // 959
+const TOTAL_FRAMES = CLIPS.length * FRAMES_PER_CLIP; // 1200 frames across the 5 cinematic scenes
+const LAST_FRAME = TOTAL_FRAMES - 1; // 1199
 
 export default function FrameSequence({ progress, onReady }: FrameSequenceProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -39,7 +39,7 @@ export default function FrameSequence({ progress, onReady }: FrameSequenceProps)
     let prevProgress = progress.current || 0;
     let initialReadyNotified = false;
 
-    // Complete image registry for all 960 frames
+    // Complete image registry for all 1200 frames
     const images: (HTMLImageElement | null)[] = new Array(TOTAL_FRAMES).fill(null);
     const inFlight = new Set<number>();
     const failedSet = new Set<number>();
@@ -216,7 +216,7 @@ export default function FrameSequence({ progress, onReady }: FrameSequenceProps)
       preloadFrame(i, true);
     }
 
-    // 3. Progressive background preloader: gradually caches all 960 frames across all 4 scenes
+    // 3. Progressive background preloader: gradually caches all 1200 frames across all 5 scenes
     let bgIndex = 31;
     const bgInterval = setInterval(() => {
       if (disposed || bgIndex > LAST_FRAME) {

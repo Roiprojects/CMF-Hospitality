@@ -36,26 +36,36 @@ const chapters: ChapterDef[] = [
     scene: 'Ingredients in Motion',
     headline: 'A little curiosity. A signature creation.',
     supporting: 'Flavour, texture and detail—made personal.',
-    ctaText: 'Inside the Cocktail Lab ↗',
-    ctaHref: '/about#our-cocktail-lab',
+    ctaText: 'Explore our services ↗',
+    ctaHref: '/services',
     stillFrame: '/frames/assembly/0120.webp'
   },
   {
     num: '03',
     label: 'THE CRAFT',
-    scene: 'Inside the Cocktail',
+    scene: 'Inside the Glass',
     headline: 'There’s a world inside every glass.',
-    supporting: 'Explore the craft behind the experience.',
+    supporting: 'Exploring aroma, clarity, and botanical balance.',
     ctaText: 'Read the cocktail journal ↗',
     ctaHref: '/blogs',
-    stillFrame: '/frames/inside-alternate/0120.webp'
+    stillFrame: '/frames/inside/0120.webp'
   },
   {
     num: '04',
+    label: 'THE COCKTAIL LAB',
+    scene: 'Where Ideas Become Experiences',
+    headline: 'Where ideas become experiences.',
+    supporting: 'From flavour concept to flawless event execution.',
+    ctaText: 'Inside the Cocktail Lab ↗',
+    ctaHref: '/about#our-cocktail-lab',
+    stillFrame: '/frames/inside-alternate/0120.webp'
+  },
+  {
+    num: '05',
     label: 'THE CELEBRATION',
     scene: 'One Glass, Different Occasions',
     headline: 'One craft. Endless occasions.',
-    supporting: 'Weddings, house parties, birthdays and live celebrations.',
+    supporting: 'Weddings, house parties, birthdays, concerts and festivals.',
     ctaText: 'Plan your experience ↗',
     ctaHref: '/contact',
     isPrimaryCta: true,
@@ -332,7 +342,7 @@ export default function StoryExperience() {
         {motionEnabled && (
           <div className="story-status" aria-live="polite">
             <span className="story-current-chapter">
-              {chapters[activeChapter].num} / 04 · {chapters[activeChapter].scene}
+              {chapters[activeChapter].num} / 0{chapters.length} · {chapters[activeChapter].scene}
             </span>
             <span className="story-scroll-hint">
               SCROLL TO CONTINUE ↓

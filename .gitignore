@@ -3,6 +3,6 @@ node_modules/
 out/
 *.tsbuildinfo
 .env*
-
 .vercel
-.env*
+inputs_and_frames/
+source-videos/
